@@ -2,6 +2,11 @@
 
 var app = require('./app');
 
-app.get('/', function(req, res) {
-  res.send('Hello world!');
+app.get('/', function(req, res, next) {
+  req.url = '/index.html';
+  next();
+});
+
+app.get('/*.html', function(req, res, next) {
+  res.render('pages/' + req.params[0]);
 });
