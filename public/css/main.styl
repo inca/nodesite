@@ -1,4 +1,32 @@
+@import 'variables'
+
 html, body
   padding:0
   margin:0
-  font: 16px PT Sans, Verdana, Arial, sans-serif
+  font: font-size/line-height font-family-main
+  font-weight: font-weight-main
+  color: color-text
+  background: color-bg
+
+header, aside, article, footer
+  padding: 8px
+
+header, aside, footer
+  text-align:center
+
+header h1
+  font: 48px font-family-header
+  font-weight: font-weight-header
+  color: color-header
+
+aside
+  nav a
+    text-decoration: none
+    color: color-nav-links
+    padding: 8px
+    &:hover
+      color: color-nav-links-hover
+
+footer
+  font-size: 12px
+  color: color-footer
