@@ -2,16 +2,16 @@ doctype html
 html
   head
     title Абстрактная веб-студия
-    link(rel='stylesheet', href='/css/main.css')
+    link(rel='stylesheet', href='#{staticRoot}/css/main.css')
   body
     header
-      img(src='/img/logo.svg')
+      img(src='#{staticRoot}/img/logo.svg')
       h1 Абстрактная веб-студия
     aside
       nav
-        a(href='/') О нас
-        a(href='/projects.html') Проекты
-        a(href='/contacts.html') Контакты
+        a(href='#{root}/') О нас
+        a(href='#{root}/projects.html') Проекты
+        a(href='#{root}/contacts.html') Контакты
     article
       block main
     footer

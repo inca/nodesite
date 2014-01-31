@@ -8,5 +8,8 @@ app.get('/', function(req, res, next) {
 });
 
 app.get('/*.html', function(req, res, next) {
-  res.render('pages/' + req.params[0]);
+  res.render('pages/' + req.params[0], {
+    root: '',
+    staticRoot: ''
+  });
 });

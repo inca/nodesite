@@ -7,7 +7,11 @@ module.exports = function(grunt) {
     jade: {
       compile: {
         options: {
-          pretty: true
+          pretty: true,
+          data: {
+            root: '/nodesite',
+            staticRoot: '/nodesite/public'
+          }
         },
         files: {
           'index.html': 'views/pages/index.jade',
